@@ -11,8 +11,47 @@ You can choose where to initially download the files. I put them in the root dir
 1. SSH into your Pi
 2. Run the following in your root or were you would like to have thes file stored in on your directory
    ```
-   git https://github.com/JoshBlackstone/HeyAlfredWakeWord
+   git clone https://github.com/JoshBlackstone/HeyAlfredWakeWord
    ```
 
-  
+3. Enter new directrory
+   ```
+   cd ~/HeyAlfredWakeWord
+   ```
+4. Pick Sensitivity and run the following command
+   ```
+   cp hay_al_fred_30000_15000_2000.tflite ~/wyoming-openwakeword/wyoming_openwakeword/models/hey_alfred_v0.1.tflite
+   ```
+5. Open the Wyoming services to choose the new wake command
+   ```
+   sudo systemctl edit --force --full wyoming-satellite.service
+   ```
+6. Eddit the file from
+```
+[Unit]
+...
+Requires=wyoming-openwakeword.service
 
+[Service]
+...
+ExecStart=/home/pi/wyoming-satellite/script/run ... --wake-uri 'tcp://127.0.0.1:10400' --wake-word-name 'ok_nabu'
+...
+
+[Install]
+...
+```
+   To
+   ```
+   [Unit]
+...
+Requires=wyoming-openwakeword.service
+
+[Service]
+...
+ExecStart=/home/pi/wyoming-satellite/script/run ... --wake-uri 'tcp://127.0.0.1:10400' --wake-word-name 'hey_alfred'
+...
+
+[Install]
+...
+
+   
