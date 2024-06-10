@@ -27,31 +27,39 @@ You can choose where to initially download the files. I put them in the root dir
    sudo systemctl edit --force --full wyoming-satellite.service
    ```
 6. Eddit the file from
-```
-[Unit]
-...
-Requires=wyoming-openwakeword.service
-
-[Service]
-...
-ExecStart=/home/pi/wyoming-satellite/script/run ... --wake-uri 'tcp://127.0.0.1:10400' --wake-word-name 'ok_nabu'
-...
-
-[Install]
-...
-```
+   ```
+   [Unit]
+   ...
+   Requires=wyoming-openwakeword.service
+   
+   [Service]
+   ...
+   ExecStart=/home/pi/wyoming-satellite/script/run ... --wake-uri 'tcp://127.0.0.1:10400' --wake-word-name 'ok_nabu'
+   ...
+   
+   [Install]
+   ...
+   ```
    To
    ```
    [Unit]
-...
-Requires=wyoming-openwakeword.service
-
-[Service]
-...
-ExecStart=/home/pi/wyoming-satellite/script/run ... --wake-uri 'tcp://127.0.0.1:10400' --wake-word-name 'hey_alfred'
-...
-
-[Install]
-...
+   ...
+   Requires=wyoming-openwakeword.service
+   
+   [Service]
+   ...
+   ExecStart=/home/pi/wyoming-satellite/script/run ... --wake-uri 'tcp://127.0.0.1:10400' --wake-word-name 'hey_alfred'
+   ...
+   
+   [Install]
+   ...
+   ```
+7. Save, exit and Restart Wyoming services
+   ```
+   sudo systemctl daemon-reload
+   ```
+   ```
+   sudo systemctl restart wyoming-satellite.service
+   ```
 
    
