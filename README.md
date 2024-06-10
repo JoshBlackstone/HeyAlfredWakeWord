@@ -18,15 +18,15 @@ You can choose where to initially download the files. I put them in the root dir
    ```
    cd ~/HeyAlfredWakeWord
    ```
-4. Pick Sensitivity and run the following command
+4. Pick Sensitivity 1 beeing less sentive and 3 beeing most sensitiv and run the following command
    ```
-   cp hay_al_fred_30000_15000_2000.tflite ~/wyoming-openwakeword/wyoming_openwakeword/models/hey_alfred_v0.1.tflite
+   cp hey_alfred_sensitivity_{Insert 1-3}.tflite ~/wyoming-openwakeword/wyoming_openwakeword/models/hey_alfred_v0.1.tflite
    ```
 5. Open the Wyoming services to choose the new wake command
    ```
    sudo systemctl edit --force --full wyoming-satellite.service
    ```
-6. Eddit the file from
+6. Eddit the file and change
    ```
    [Unit]
    ...
