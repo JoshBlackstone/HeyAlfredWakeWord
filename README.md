@@ -11,7 +11,7 @@ You can choose where to initially download the files. I put them in the root dir
 1. SSH into your Pi
 2. Run the following in your root or were you would like to have thes file stored in on your directory
    ```
-   git clone https://github.com/JoshBlackstone/HeyAlfredWakeWord
+   git clone https://github.com/The-Blackstone/HeyAlfredWakeWord
    ```
 
 3. Enter new directrory
