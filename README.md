@@ -1,6 +1,6 @@
 # Custom Wake word "Hey Alfred" for Home Assistant.
 
-## If you want to build your own wake work instead of "Hey Alfred" you can follow these instructions [These instructions](https://www.home-assistant.io/voice_control/create_wake_word/) and use the generated .tflite file with the instructions below from step 4
+If you want to build your own wake work instead of "Hey Alfred" you can follow these instructions [These instructions](https://www.home-assistant.io/voice_control/create_wake_word/) and use the generated .tflite file with the instructions below from step 4
 
 ## Install
 
