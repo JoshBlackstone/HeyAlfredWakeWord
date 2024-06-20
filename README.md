@@ -1,5 +1,7 @@
 # Custom Wake word "Hey Alfred" for Home Assistant.
 
+These instructions will guide you through downloading a new wake word, "Hey Alfred" on a running instance of Wyoming Satellite and setting it as the new activation phrase. 
+
 If you want to build your own wake work instead of "Hey Alfred" you can follow these instructions [These instructions](https://www.home-assistant.io/voice_control/create_wake_word/) and use the generated .tflite file with the instructions below from step 4
 
 ## Install
