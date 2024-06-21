@@ -20,9 +20,9 @@ You can choose where to download the files initially. I put them in the root dir
    ```
    cd HeyAlfredWakeWord
    ```
-4. In the file, you will see three .rflite files, all named the same but labels 1,2 and 3. 1 being the least sensitive version and 3 being the most sensitive. Pick the sensitivity that would work best for where you are going to put your assistant. If you are unsure use 2
+4. In the file, you will see three .rflite files, all named the same but labels 1,2, and 3. 1 being the most sensitive version and 4 being the least sensitive. Pick the sensitivity that would work best for where you are going to put your assistant. If you are unsure use 3
    ```
-   cp hey_alfred_sensitivity_2.tflite ~/wyoming-openwakeword/wyoming_openwakeword/models/hey_alfred_v0.1.tflite
+   cp hey_alfred_sensitivity_3.tflite ~/wyoming-openwakeword/wyoming_openwakeword/models/hey_alfred_v0.1.tflite
    ```
 6. Open the Wyoming services to choose the new wake command
    ```
